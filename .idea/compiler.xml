@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ready-04-GeneratorMapper" />
+        <module name="ready-03-swagger" />
+        <module name="AxiosDemo" />
+        <module name="ready-02-httpClient" />
+        <module name="micr-web" />
+        <module name="mic-api" />
+        <module name="micr-dataservice" />
+        <module name="ready-01-fastjson" />
+        <module name="micr-common" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="AxiosDemo" options="-parameters" />
+      <module name="mic-api" options="-parameters" />
+      <module name="micr-common" options="-parameters" />
+      <module name="micr-dataservice" options="-parameters" />
+      <module name="micr-web" options="-parameters" />
+      <module name="ready-03-swagger" options="-parameters" />
+    </option>
+  </component>
+</project>

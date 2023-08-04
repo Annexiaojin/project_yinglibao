@@ -1,0 +1,35 @@
+
+spring:
+  application:
+    name: micr-web
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  redis:
+    host: localhost
+    port: 6379
+server:
+  port: 8000
+  servlet:
+    context-path: /api
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+dubbo:
+  registry:
+    address: zookeeper://localhost:2181
+  scan:
+    base-packages: com.xx.micrweb
+  consumer:
+    check: false
+    timeout: 50000
+    retries: 0
+jdwx:
+  sms:
+    url: https://way.jd.com/chuangxin/dxjk
+    appKey: 3680fa919b771148da626bbcbd459475
+    content: 【招商银行】验证码:%s，有效期为5分钟，请勿泄露
+    logincontent: 【招商银行】登录验证码:%s，有效期为5分钟，请勿泄露
+jwt:
+  key: 1f3e3fb413414981995e3f62129e1e5b
